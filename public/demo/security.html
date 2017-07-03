@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>区块链</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	
+
+  
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<!-- CS Select -->
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/flash.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+<script>
+
+</script>
+
+	</head>
+	<body>
+		<div class="page-wrapper">
+		<div class="security-page" >
+
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo">
+						<img src="images/logo.png" width="70%">
+					</h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu clearfix float-l" id="fh5co-primary-menu">
+							<li ><a href="index.html">首页</a></li>
+							<li >
+								<a href="features.html" >产品介绍</a>
+							</li>
+							<li class="active"><a href="security.html">区块链</a></li>
+							<li><a href="inducase.html">行业案例</a></li>
+							
+						</ul>
+						<ul class="header-login float-r">
+	        	
+			           	   <li><a href="login.html" class="login" id="homeLogin"><span>登录</span></a></li>
+			               <li><a href="regist.html" class="regin" ><span>注册</span></a></li>
+					           
+					           
+				        </ul>
+					</nav>
+					
+				</div>
+			</div>
+		</header>
+
+		<div class="index">
+			<div class="banner">
+				<div class="node_cloud" style="background:url('./images/bg.png') center center no-repeat;background-size:88% 88%;">
+					<canvas width="680" height="360" id="myDiagramDiv" style="border: 0px solid rgb(68, 68, 68); cursor: default;"></canvas>
+				</div>
+				<div class="banner-info">
+					<div class="banner-tt"  style="color:#117d8b; ">数字资产演示</div>
+					<div align="left" style="line-height:12px;color:#333;" class="banner-tt"> <span style="font-size: 15px;">黄金资产抽样数据演示</span> </div>
+					<br>
+					<div class="banner-des">状态：<span class="" id="sys_state_title">全网可用</span>
+						<div class="mod-helptips"> 
+							<i class="ico-helptips">?</i>
+							<!--提示浮层-->
+							<div class="helptips-layertips">
+								<span class="ico-direction-t"><!-- 上三角形图标 --> </span>
+								<div class="layertips-main">
+									<div id="notice_info_do">
+										<p>正常节点数大于等于共识算法规定最少节点数，区块链网络能正常运作。</p>
+									</div>
+									<div id="notice_info_donot" style="display: none;">
+										<p>正常节点数小于共识算法规定最少节点数，区块链网络不能正常运作。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+       			 <div class="canvas_info"></div>
+        		<!-- end -->
+    
+				<div class="block-details">
+						<ul>
+							<li>
+								<span class="icon-3"></span>
+								<span class="block-info">
+									<span>当前节点数</span><br>
+									<span class="block-num" id="nodeNum">4</span>
+								</span>
+							</li>
+							<li>
+								<span class="icon-1"></span>
+								<span class="block-info">
+									<span>区块高度</span><br>
+									<span class="block-num" id="blockNum">864,704</span>
+								</span>
+							</li>
+							<li>
+								<span class="icon-4"></span>
+								<span class="block-info">
+									<span>历史并发峰值</span><br>
+									<span class="block-num" id="transSpikes">356</span><span class="block-num" style="font-size: 15px;text-align: center;">&nbsp;笔/秒</span>
+								</span>
+							</li>
+						<li>
+								<span class="icon-2"></span>
+								<span class="block-info">
+									<span>总交易笔数</span><br>
+									<span class="block-num" id="transNum">3,672,954</span>
+								</span>
+							</li>
+							
+						</ul>
+					</div>
+			</div>
+			<div class="container">
+				<div class="index-main">
+					<div class="index-title">节点</div>
+					<div style="padding:5px 20px;">
+						<table class="table">
+							<thead>
+								<th>节点名称</th>
+								<th>位置</th>
+								<th>状态</th>
+								<th>区块高度</th>
+								<th>当前区块哈希值</th>
+								<th>最新更新时间</th>
+							</thead>
+							<tbody id="tbody-i">
+							
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="index-main">
+					<div class="index-title">最新交易</div>
+					<div style="padding:5px 20px;">
+						<table class="table">
+							<thead>
+								<th>区块高度</th>
+								<th>交易哈希值</th>
+								<th>业务类型</th>
+								<th>交易类型</th>
+								<th>交易发起方</th>
+								<th>交易接收方</th>
+								<th>交易份额</th>
+								<th>交易时间</th>
+							</thead>
+							<tbody id="tbody-o">
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row row-bottom-padded-md">
+						<div class="col-md-4">
+							<p>联系我们</p>
+							<h3 class="section-title">电话：400-869-2012</h3>
+							<h3 class="section-title">邮箱：xxxx@company.com</h3>
+						</div>
+						<div class="col-md-4">
+							<p>产品特色</p>
+							<ul class="feather">
+								<li>安全保障&nbsp;&nbsp;&nbsp;  过程保障</li>
+								<li>合规有效&nbsp;&nbsp;&nbsp;  文件加密</li>
+								<li>身份认证&nbsp;&nbsp;&nbsp;  防止篡改</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<p>下载客户端</p>
+							<img src="images/fuwuhao.jpg">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 center">
+							<p>
+           © 2014-2017 深圳法大大网络科技有限公司版权所有. 保留一切权利. 增值电信业务经营许可证：粤B2-20170163 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Date Picker -->
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<!-- CS Select -->
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+	
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+	<script src="js/indexcan.js"></script>
+	<script>
+		$(function(){
+
+			for(var i=0;i<10;i++){
+				$("#tbody-i").append("<tr><td>腾讯FiT</td>\
+								<td>深圳(*.*.6.100)</td>\
+								<td>数据已同步</td>\
+								<td>"+Math.random().toFixed(6)*1000000+"</td>\
+								<td>"+Math.random().toFixed(6)*1000000+"...</td>\
+								<td>2017-06-2913:22:19</td>\
+								</tr>");
+			}
+
+			for(var i=0;i<10;i++){
+				$("#tbody-o").append("<tr>\
+										<td>"+Math.random().toFixed(6)*1000000+"</td>\
+										<td>"+Math.random().toFixed(6)*1000000+"...</td>\
+										<td>微黄金</td>\
+										<td>资产申购</td>\
+										<td>********"+Math.random().toFixed(6)*1000000+"*******</td>\
+										<td>*******"+Math.random().toFixed(6)*1000000+"********</td>\
+										<td>*******00</td>\
+										<td>2017-06-2913:22:19</td>\
+									</tr>");
+			}
+
+
+		})
+	</script>
+	</body>
+</html>
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)./home.html#/user/baseinfo -->
+<html class="ng-app"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  	
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="">
+	<meta http-equiv="description" content="">
+	<link rel="stylesheet" href="./resource/fdd-style.css">
+	<title ng-bind="title" class="ng-binding">个人认证信息</title>
+	<style type="text/css">
+		.zixun{border-radius:50%;display:block;width:40px;height:40px;cursor:pointer; position:fixed;text-align:center;padding:5px;bottom:30px;right:20px;border:3px solid #ffcd33;background:#fff url("statics/images/fdd-jiaoliu.png") no-repeat center 50%;}
+		.zixun span{color:#fff;line-height:40px;opacity:0}
+		.zixun:hover{background-color:#FFD238}
+		.zixun:hover span{ opacity:1}
+	</style>
+  <link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<!-- CS Select -->
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+	
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/flash.css">
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="detail">
+    <div ui-view="" class="wid wid-110 ng-scope">
+    <header id="fh5co-header-section" class="sticky-banner stuck">
+        <div class="container">
+            <div class="nav-header">
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+                <h1 id="fh5co-logo">
+                    <img src="images/logo.png" width="70%">
+                </h1>
+                <!-- START #fh5co-menu-wrap -->
+                <nav id="fh5co-menu-wrap" role="navigation">
+                    <ul class="sf-menu clearfix float-l" id="fh5co-primary-menu">
+                        <li ><a href="index.html">首页</a></li>
+                        <li>
+                            <a href="features.html" >产品</a>
+                        </li>
+                        <li><a href="security.html">区块链</a></li>
+                        <li><a href="inducase.html">行业案例</a></li>
+                        
+                    </ul>
+                    <!--<ul class="header-login float-r">
+                        <li><a href="login.html" class="login" id="homeLogin"><span>登录</span></a></li>
+                        <li><a href="regist.html" class="regin" ><span>注册</span></a></li>
+                    </ul>-->
+                </nav>
+                
+            </div>
+        </div>
+    </header>
+
+<!-- right -->
+<div class="fdd-right pos-r ng-scope" style="padding-top:105px;">
+	<!-- uiView: --><div ui-view="" class="wid ng-scope"><div class="fdd-pd45 ng-scope" style=" padding-bottom:20px;">
+        <div class="bg_white wid-sy-100 box-shadow">
+            <div class="fddv3-vip-title">基本信息</div>
+            <div class="fdd-bt-list">
+                <ul class="line-t-xa clearfix">
+                    <li class=""><span class="mg-r-30 ng-binding">个人账号</span><span class="txt-999 dip mg-r-10 ng-binding">44872446@qq.com</span><!-- ngIf: bi.iconShow --></li>
+                    <li class="text-right"><span class="ico_img ico_renz"></span><span class="dip">已激活</span></li>
+                </ul>
+                <ul class="line-t-xa clearfix">
+                    <li class=""><span class="mg-r-30">登录密码</span><span class="txt-999">********</span><a href="javascript:void(0)" title="编辑" class="ico_img ico_gai" ng-click="bi.amendPassword()"></a></li>
+                    <li class="text-right"><span class="ico_img ico_renz"></span><span class="dip">已设置</span></li>
+                </ul>
+                <!-- ngIf: bi.company -->
+                <ul class=" line-t-xa clearfix">
+                	<li class=""><span class="mg-r-30">证件照片</span><span class="txt-999 ng-binding"></span><!-- ngIf: bi.isIdentify.identify --><a href="upload_cebtify.html" class="link-txt-pink ng-scope" >立即认证</a><!-- end ngIf: bi.isIdentify.identify --><!-- ngIf: bi.isIdentify.reIdentify --></li>
+                	<li class="text-right"><span class="ico_img" ng-class="{true: &#39;&#39;, false: &#39;ico_renz&#39;}[bi.info.status!=2?true:false]"></span><span class="dip ng-binding">未认证</span></li>
+                </ul>
+                <ul class=" line-t-xa clearfix">
+                    <li class=""><span class="mg-r-30">身份证号</span><span class="txt-999 ng-binding"></span></li>
+                    <li class="text-right"><span class="ico_img" ng-class="{true: &#39;&#39;, false: &#39;ico_renz&#39;}[bi.info.status!=2?true:false]"></span><span class="dip ng-binding">未认证</span></li>
+                </ul>
+                 <ul class="line-t-xa clearfix">
+                    <li class=""><span class="mg-r-30">个人姓名</span><span class="txt-999 ng-binding"></span><a href="javascript:void(0)" class="ico_img ico_gai" title="编辑" ng-click="bi.amendCompanyAddress()"></a></li>
+                    <li class="text-right"><span class="ico_img" ng-class="{true: &#39;&#39;, false: &#39;ico_renz&#39;}[bi.info.receiptAddress==&#39;&#39;?true:false]"></span><span class="dip ng-binding" ng-bind="{true: &#39;未设置&#39;, false: &#39;已设置&#39;}[bi.info.receiptAddress==&#39;&#39;?true:false]">未设置</span></li>
+                </ul>
+                <ul class=" line-t-xa clearfix">
+                    <li class=""><span class="mg-r-30">手机号码</span><span class="txt-999 ng-binding">158****1966</span><a href="javascript:void(0)" title="编辑" class="ico_img ico_gai" ng-click="bi.toChange(1)"></a></li>
+                    <li class="text-right">
+                    	<!-- ngIf: bi.info.mobile !== undefined --><span ng-if="bi.info.mobile !== undefined" style="color:#999;" class="ng-scope">(此号码用于接收重要通知)</span><!-- end ngIf: bi.info.mobile !== undefined -->
+                    	<span class="ico_img ico_renz" ng-class="{true: &#39;&#39;, false: &#39;ico_renz&#39;}[bi.info.mobile==undefined?true:false]" style="margin-right:5px;"></span>
+                    	<span class="dip ng-binding" ng-bind="{true: &#39;未绑定&#39;, false: &#39;已绑定&#39;}[bi.info.mobile==undefined?true:false]">已绑定</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box-shadow bg_white mg-20 wid-sy-100">
+            <div class="fddv3-vip-title">签署设置</div>
+            <div class="fdd-bt-list">
+                <ul class="line-t-xa clearfix">
+                    <li class=""><span class="mg-r-30">所有人签完后发送一份至我邮箱</span></li>
+                    <li class="text-right" ng-class="{true: &#39;hover&#39;, false: &#39;&#39;}[bi.info.isPostContract==1?true:false]" ng-click="bi.postContract()">
+                        <div class="fdd-kg-bg pos-a">
+                            <span>开</span>
+                            <span>关</span>
+                            <label class="label-r"></label>
+                            <input type="radio">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="line-t-xa clearfix">
+                    <li class=""><span class="mg-r-30">过期前几天提醒接收方？</span></li>
+                    <li class="text-right">
+                        <div class="pos-a fdd-zj-bg ng-binding">1天<a href="javascript:void(0)" ng-click="bi.addTime(bi.info.overdueRemindDay)">+</a><a href="javascript:void(0)" class="link-sz-p" ng-click="bi.minusTime(bi.info.overdueRemindDay)">-</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+<!-- 弹出层 -->
+
+
+
+<div error-info="" is-error-msg="bi.isErrorMsg" class="ng-scope ng-isolate-scope"><div class="section pos-f alpha5 z-index2 left-t-0 ng-hide" ng-show="isErrorMsg.isShowErrorMsg" style="background-color:rgba(255,255,255,0)"></div><div style="position:fixed; top:45%; left:0; right:0; text-align:center; z-index:99" ng-show="isErrorMsg.isShowErrorMsg" class="ng-hide"><div class="bg_block txt-waite radius5 pg-t-10 pg-b-10 pg-lr-40 dip ng-binding" ng-bind-html="isErrorMsg.errorMsg"></div></div></div>
+<update-info class="ng-scope"><!-- ngIf: bi.isShowBox -->
+
+</update-info>
+<bind-info class="ng-scope">
+
+</bind-info>
+<pop-up-box is-show-box="bi.isBox" opt="bi.opts" class="ng-scope ng-isolate-scope"><div class="section bg_block pos-f alpha5 z-index2 left-t-0 ng-hide" ng-show="isShowBox"></div><div class="pos-f bg_white z-index3 radius10 over right-lt-50 pg-b-10 ng-hide" ng-show="isShowBox" id="pop-up-box" ng-style="opt.styleCss" style="width: 550px; height: 160px; margin-left: -275px; margin-top: -80px;"><div class="pos-a wid-100 ico_caidai left-t-0"></div><div class="h4 line-b table-pd-link ng-binding" ng-bind="opt.title">企业信息变更请及时更新</div><div class="pg-20 ng-binding" ng-bind-html="opt.message">如果您的企业信息发生变更，请及时更新信息，重新提交认证。</div><a href="javascript:;" ng-show="opt.isClose" ng-click="opt.closeBox()" class="ico_pop_ca ico_img pos-a right-t-20 ng-hide"></a><div class="pg-b-20 pg-lr-20 text-right" ng-class="opt.location" id="pop-up-box-buttons" ng-show="opt.isButtons"><!-- ngRepeat: ob in opt.buttons --><a href="javascript:;" ng-repeat="ob in opt.buttons" ng-click="ob.callback()" ng-class="ob.colorClass" style="margin-left:5px;" class="pg-link pos-r over dip ng-binding ng-scope link-orange">重新认证</a><!-- end ngRepeat: ob in opt.buttons --><a href="javascript:;" ng-repeat="ob in opt.buttons" ng-click="ob.callback()" ng-class="ob.colorClass" style="margin-left:5px;" class="pg-link pos-r over dip ng-binding ng-scope link-gray">没有变更</a><!-- end ngRepeat: ob in opt.buttons --></div></div></pop-up-box></div>
+</div>
+<div id="fdd-load" class="fdd-loading ng-scope" style="width: 100%; min-width: 1200px; display: none;">
+    <div class="tipload"></div>
+</div>
+<div error-info="" is-error-msg="isErrorMsg" class="ng-scope ng-isolate-scope"><div class="section pos-f alpha5 z-index2 left-t-0 ng-hide" ng-show="isErrorMsg.isShowErrorMsg" style="background-color:rgba(255,255,255,0)"></div><div style="position:fixed; top:45%; left:0; right:0; text-align:center; z-index:99" ng-show="isErrorMsg.isShowErrorMsg" class="ng-hide"><div class="bg_block txt-waite radius5 pg-t-10 pg-b-10 pg-lr-40 dip ng-binding" ng-bind-html="isErrorMsg.errorMsg"></div></div></div>
+<!-- ngIf: locked -->
+<go-top class="ng-scope"><div class="fdd-ontop ng-hide" ng-show="isTopBtn"><a href="javascript:;"><img src="./resource/apptop.png"></a></div></go-top>
+<!--弹窗-->
+</div>
+    
+    <form id="csrfTokenForm" style="display:none;" action="./" method="post" class="ng-pristine ng-valid"><div>
+<input type="hidden" name="CSRFToken" value="5288ce3d1a3a4ac9978e6cefffd724a5">
+</div>
+
+</form>
+    
+<div style="height:80px;"></div>
+
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row row-bottom-padded-md">
+                <div class="col-md-4">
+                    <p>联系我们</p>
+                    <h3 class="section-title">电话：400-869-2012</h3>
+                    <h3 class="section-title">邮箱：xxxx@company.com</h3>
+                </div>
+                <div class="col-md-4">
+                    <p>产品特色</p>
+                    <ul class="feather">
+                        <li>安全保障&nbsp;&nbsp;&nbsp;  过程保障</li>
+                        <li>合规有效&nbsp;&nbsp;&nbsp;  文件加密</li>
+                        <li>身份认证&nbsp;&nbsp;&nbsp;  防止篡改</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>下载客户端</p>
+                    <img src="./images/fuwuhao.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 center">
+                    <p>
+    © 2014-2017 深圳法大大网络科技有限公司版权所有. 保留一切权利. 增值电信业务经营许可证：粤B2-20170163 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>  
+
+</body></html>

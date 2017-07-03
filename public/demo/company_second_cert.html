@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)./home.html#/user/companyIdentify_2/1 -->
+<html class="ng-app"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  	
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   
+    
+ 	
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	
+	<link rel="stylesheet" href="./resource/fdd-style.css">
+	<title ng-bind="title" class="ng-binding">企业认证</title>
+	<style type="text/css">
+		.zixun{border-radius:50%;display:block;width:40px;height:40px;cursor:pointer; position:fixed;text-align:center;padding:5px;bottom:30px;right:20px;border:3px solid #ffcd33;background:#fff url("statics/images/fdd-jiaoliu.png") no-repeat center 50%;}
+		.zixun span{color:#fff;line-height:40px;opacity:0}
+		.zixun:hover{background-color:#FFD238}
+		.zixun:hover span{ opacity:1}
+	</style>
+
+    <link rel="stylesheet" href="./css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="./css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="./css/superfish.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="./css/flexslider.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="./css/magnific-popup.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
+	<!-- CS Select -->
+	<link rel="stylesheet" href="./css/cs-select.css">
+	<link rel="stylesheet" href="./css/cs-skin-border.css">
+	
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/flash.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  
+  <body id="detail">
+
+
+<header id="fh5co-header-section" class="sticky-banner stuck">
+    <div class="container">
+        <div class="nav-header">
+            <a href="./company_cert_first.html#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+            <h1 id="fh5co-logo">
+                <img src="./images/logo.png" width="70%">
+            </h1>
+            <!-- START #fh5co-menu-wrap -->
+            <nav id="fh5co-menu-wrap" role="navigation">
+                <ul class="sf-menu clearfix float-l" id="fh5co-primary-menu">
+                    <li><a href="./index.html">首页</a></li>
+                    <li>
+                        <a href="./features.html">产品</a>
+                    </li>
+                    <li><a href="./security.html">区块链</a></li>
+                    <li><a href="./inducase.html">行业案例</a></li>
+                    
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+</header>
+<!-- right -->
+<div class="fdd-right pos-r ng-scope" style="margin-top:20px;">
+	<!-- uiView: --><div ui-view="" class="wid ng-scope"><!-- 企业认证2 -->
+ <!-- ngInclude: 'webs/templates/identify/identifyHeader.html' --><div ng-include="&#39;webs/templates/identify/identifyHeader.html&#39;" class="ng-scope"><!-- 个人认证 -->
+         </div>
+ <div class="wid ng-scope">
+        <div class="wid box-siz over-y">
+            <div class="text-center fdd-qy-bz">
+                <div class="dip focu"><span class="ico_img ico_bz_gou mg-r-5"></span><span class="dip">基础信息</span><em class="ico_img"></em></div>
+                <div class="dip hover"><span class="ico_img ico_bz_gou mg-r-5"></span><span class="dip">填写企业信息</span><em class="ico_img"></em></div>
+                <!--<div class="dip"><span class="ico_img ico_bz_gou mg-r-5"></span><span class="dip">采集人像信息</span><em class="ico_img"></em></div>-->
+            </div>
+            <div class="wid-sy-100 bg_white box-shadow mg-20" style="padding-bottom: 60px;">
+                <div class="h5 line-b fdd-qy-menu">
+                    <a href="javascript:;" ng-click="identifyService.seledOpt.isThree?identifyService.changeTab():&#39;&#39;" ng-class="{true:&#39;&#39;,false:&#39;hover&#39;}[identifyService.seledOpt.isThree]" class="hover">企业资料</a>
+                </div>
+                <form enctype="multipart/form-data" name="myForm" class="fdd-wid-900 ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength" ng-submit="identifyService.submitForm()" novalidate="">
+                    <div class="pos-r mg-20 inp-txt-c">
+                        <label class="pos-a control-label ng-binding">企业名称</label>
+                        <div class="">
+                            <input type="text" class="form-control border wid-100 ng-pristine ng-untouched ng-not-empty ng-valid ng-valid-required" placeholder="请填写营业执照上的名称" name="companyName" ng-model="identifyService.user.companyName" required="">
+<!--                         	<div class="txt-pink pg-t-5" ng-show=" myForm.companyName.$invalid && identifyService.submitted">请填写正确的企业名称</div>
+                        	<div class="txt-pink pg-t-5" ng-if="identifyService.sh.isCompanyName">请填写正确的企业名称</div>  -->
+                        </div>
+                    </div>
+                    <!-- ngIf: !identifyService.seledOpt.isThree --><div class="pos-r mg-20 inp-txt-c ng-scope" ng-if="!identifyService.seledOpt.isThree">
+                        <!-- ngIf: identifyService.seledOpt.nameField=='组织' -->
+                        <!-- ngIf: identifyService.seledOpt.nameField=='企业' --><label class="pos-a control-label ng-scope" ng-if="identifyService.seledOpt.nameField==&#39;企业&#39;">营业执照注册号</label><!-- end ngIf: identifyService.seledOpt.nameField=='企业' -->
+                        <div class="">
+                            <input type="text" class="form-control border wid-100 ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern" name="license" ng-model="identifyService.user.license" required="" ng-pattern="/^[A-Za-z0-9]*$/">
+<!--                         	<div class="txt-pink pg-t-5" ng-show="identifyService.submitted && myForm.license.$invalid">请填写正确的营业执照注册号</div>
+                        	<div class="txt-pink pg-t-5" ng-if="identifyService.sh.isLicense">请填写正确的营业执照注册号</div> -->
+                        </div>
+                    </div><!-- end ngIf: !identifyService.seledOpt.isThree -->
+                    <!-- ngIf: !identifyService.seledOpt.isThree --><div class="pos-r mg-20 inp-txt-c ng-scope" ng-if="!identifyService.seledOpt.isThree">
+                        <!-- ngIf: identifyService.seledOpt.nameField=='组织' -->
+                         <!-- ngIf: identifyService.seledOpt.nameField=='企业' --><label class="pos-a control-label ng-scope" ng-if="identifyService.seledOpt.nameField==&#39;企业&#39;">营业执照副本图片</label><!-- end ngIf: identifyService.seledOpt.nameField=='企业' -->
+                        <div class="">
+                            <dl class="over mg-none">
+                                <dd class="border dip mg-r-5 pos-r" ng-click="identifyService.showImg(identifyService.expImgs.licenseImg)"><span class="pos-a ico_img ico_shili dip" ng-show="identifyService.expImgs.licenseImg == &#39;webs/images/shili-01.jpg&#39;"></span><img ng-src="webs/images/shili-01.jpg" width="84" height="112" src="./resource/shili-01.jpg">
+                                	<a href="javaScript:;" class="pos-a ico_img ico_fdj left-rb-0 z-index2 alpha5" style="bottom: 5px; right: 5px;"></a>
+                                </dd>
+                                <dt class="dip txt-weight txt-999" style="width: 72%">照片所有信息需清晰可见，内容真实有效，
+                                  照片支持.jpg .jpeg .png格式，大小不超过20M。<br>
+                                    <a href="javascript:;" class="link-gray mg-10 pos-r over dip">选择图片<input type="file" required="" class="form-inp-r pos-a ng-isolate-scope" name="licenseFile" upload-photo="" img-name="identifyService.expImgs.licenseImg" error-msg="identifyService.errorMess[0]" file-path="identifyService.user.licenseFile"></a>
+                                   <!--  <span class="txt-pink pg-t-5" ng-show="identifyService.sh.isLicensePhoto">请上传正确格式及大小的营业执照副本图片</span> -->
+                                </dt>
+                            </dl>
+                            
+                        </div>
+                    </div><!-- end ngIf: !identifyService.seledOpt.isThree -->
+                 
+                    <!-- ngIf: !identifyService.seledOpt.isThree --><div class="pos-r mg-20 inp-txt-c ng-scope" ng-if="!identifyService.seledOpt.isThree">
+                        <label class="pos-a control-label">组织机构代码</label>
+                        <div class="">
+                            <input type="text" class="form-control border wid-100 ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength" ng-readonly="identifyService.isReadonly" name="organization" ng-model="identifyService.user.organization" placeholder="例如：311571941,请去掉“-”" maxlength="9" required="" ng-pattern="/^[A-Za-z0-9]*$/">                                         	
+                        	<!-- <div class="txt-pink pg-t-5" ng-show="identifyService.submitted && myForm.organization.$invalid">请填写正确的组织机构代码</div>
+                        	<div class="txt-pink pg-t-5" ng-if="identifyService.sh.isOrganization">请填写正确的组织机构代码</div> -->
+                        </div>
+                    </div><!-- end ngIf: !identifyService.seledOpt.isThree -->
+                    <!-- ngIf: !identifyService.seledOpt.isThree --><div class="pos-r mg-20 inp-txt-c ng-scope" ng-if="!identifyService.seledOpt.isThree">
+                        <label class="pos-a control-label">组织机构代码证图片</label>
+                        <div class="">
+                            <dl class="over mg-none">
+                                <dd class="border dip mg-r-5 pos-r" ng-click="identifyService.showImg(identifyService.expImgs.organizationImg)"><span class="pos-a ico_img ico_shili dip" ng-show="identifyService.expImgs.organizationImg == &#39;webs/images/shili-02.jpg&#39;"></span><img ng-src="webs/images/shili-02.jpg" width="84" height="112" src="./resource/shili-02.jpg">
+                                	<a href="javaScript:;" class="pos-a ico_img ico_fdj left-rb-0 z-index2 alpha5" style="bottom: 5px; right: 5px;"></a>
+                                </dd>
+                                <dt class="dip txt-weight txt-999" style="width: 72%">照片所有信息需清晰可见，内容真实有效，照片支持.jpg .jpeg .png格式，大小不超过20M。
+                                    <br>
+                                    <a href="javascript:;" class="link-gray mg-10 pos-r over dip">选择图片<input type="file" required="" class="form-inp-r pos-a ng-isolate-scope" name="organizationFile" upload-photo="" img-name="identifyService.expImgs.organizationImg" error-msg="identifyService.errorMess[1]" file-path="identifyService.user.organizationFile"></a>
+<!--                                     <span class="txt-pink pg-t-5" ng-if="identifyService.sh.isOrganizationPhoto">请上传正确格式及大小的组织机构代码证图片</span>
+ -->                                </dt>
+                            </dl>
+                        </div>
+                    </div><!-- end ngIf: !identifyService.seledOpt.isThree -->
+                    <!-- ngIf: identifyService.seledOpt.isThree -->
+                    <!-- ngIf: identifyService.seledOpt.isThree -->
+                    <!-- ngIf: identifyService.seledOpt.isAgent -->
+                    <div class="pos-r mg-20 inp-txt-c">
+                        <label class="pos-a control-label">(法人代表/负责人)姓名</label>
+                        <div class="">
+                            <input type="text" class="form-control border wid-100 ng-pristine ng-untouched ng-not-empty ng-valid ng-valid-required" name="legalName" ng-model="identifyService.user.legalName" required="">
+                        	<!-- <div class="txt-pink pg-t-5" ng-show="identifyService.submitted && myForm.legalName.$invalid">请填写正确的姓名</div>
+                        	<div class="txt-pink pg-t-5" ng-if="identifyService.sh.isLegalName">请填写正确的法人代表/负责人姓名</div> -->
+                        </div>
+                    </div>
+                    <!-- ngIf: identifyService.seledOpt.isAgent -->
+                    <div class="pos-r mg-20 inp-txt-c">
+                        <label class="pos-a control-label ng-binding">(法人代表/负责人)身份证号</label>
+                        <div class="">
+                            <input type="text" class="form-control border wid-100 ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" name="idCard" ng-model="identifyService.user.idCard" required="" validcard="">
+                        	<!-- <div class="txt-pink pg-t-5" ng-show="identifyService.submitted && myForm.idCard.$invalid">请填写正确的身份证号</div>
+                        	<div class="txt-pink pg-t-5" ng-if="identifyService.sh.isIdCard">请填写正确的身份证号</div>  -->
+                        </div>
+                    </div>
+                    <div class="pos-r mg-20 inp-txt-c">
+                        <label class="pos-a control-label ng-binding">(法人代表/负责人)手机号</label>
+                        <div class="">
+                            <input type="text" class="form-control border wid-100 ng-pristine ng-untouched ng-valid-pattern ng-not-empty ng-valid ng-valid-required" placeholder="用于接收签名验证码等重要通知" name="mobile" ng-model="identifyService.user.mobile" required="" ng-pattern="/^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/">
+                        	<!-- <div class="txt-pink pg-t-5" ng-show="identifyService.submitted && myForm.mobile.$invalid">请填写正确的手机号</div>
+                        	<div class="txt-pink pg-t-5" ng-if="identifyService.opts.hasPhone">请填写正确的手机号</div> -->
+                        </div>
+                    </div>
+                    <div class="pos-r mg-20 inp-txt-r15">
+                        <label class="pos-a control-label">短信验证码</label>
+                        <div>
+                            <input type="text" class="form-control border wid-100 ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength" name="code" ng-model="identifyService.user.code" required="" maxlength="6">
+                        	<!-- <div class="txt-pink pg-t-5" ng-show="identifyService.submitted && myForm.code.$invalid">请填写正确的短信验证码</div>
+                        	<div class="txt-pink pg-t-5" ng-if="identifyService.sh.isCode">请填写正确的短信验证码</div> -->
+                        </div>
+                        <div class="pg-l-none dip pos-a" style="top:0; right: 0;">
+                            <a href="javascript:;" class="link-gray-yzm ng-isolate-scope" smscode="" canshu="identifyService.opts" callback="identifyService.getCode(identifyService.opts)">获取验证码</a></div>
+                    </div>
+                    <div class="pos-r mg-40 inp-txt-c" style="margin-top:20px;">
+                        <a href="company_info.html">
+                    	<input class="link-orange no-line" style="line-height:0;cursor:pointer;"  value="完成提交，等待审核">
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div show-big-img="" img-url="identifyService.sh.selectedImg" is-show="identifyService.sh.isShowBigImg" class="ng-scope ng-isolate-scope"><div ng-show="isShow" class="section bg_block pos-f alpha5 z-index2 left-t-0 ng-hide"></div><div ng-show="isShow" class="pos-f z-index3 right-lt-50 fdd-big-img text-center bg_white radius5 ng-hide" style=""><a href="javascript:;" ng-click="isShow=!isShow" class="pos-a ico_img ico_cha_img2" style="right: -40px; top: 5px;"></a></div></div>
+    <div pop-up-box="" is-show-box="identifyService.sh.isShowBox" opt="identifyService.boxAttr" class="ng-scope ng-isolate-scope"><div class="section bg_block pos-f alpha5 z-index2 left-t-0 ng-hide" ng-show="isShowBox"></div><div class="pos-f bg_white z-index3 radius10 over right-lt-50 pg-b-10 ng-hide" ng-show="isShowBox" id="pop-up-box" ng-style="opt.styleCss" style="width: 550px; height: 200px; margin-left: -275px; margin-top: -100px;"><div class="pos-a wid-100 ico_caidai left-t-0"></div><div class="h4 line-b table-pd-link ng-binding" ng-bind="opt.title">提示信息</div><div class="pg-20 ng-binding" ng-bind-html="opt.message"></div><a href="javascript:;" ng-show="opt.isClose" ng-click="opt.closeBox()" class="ico_pop_ca ico_img pos-a right-t-20"></a><div class="pg-b-20 pg-lr-20 text-right" ng-class="opt.location" id="pop-up-box-buttons" ng-show="opt.isButtons"><!-- ngRepeat: ob in opt.buttons --><a href="javascript:;" ng-repeat="ob in opt.buttons" ng-click="ob.callback()" ng-class="ob.colorClass" style="margin-left:5px;" class="pg-link pos-r over dip ng-binding ng-scope link-gray">知道了</a><!-- end ngRepeat: ob in opt.buttons --></div></div></div>
+    <error-info is-error-msg="identifyService.errorInfo" class="ng-scope ng-isolate-scope"><div class="section pos-f alpha5 z-index2 left-t-0 ng-hide" ng-show="isErrorMsg.isShowErrorMsg" style="background-color:rgba(255,255,255,0)"></div><div style="position:fixed; top:45%; left:0; right:0; text-align:center; z-index:99" ng-show="isErrorMsg.isShowErrorMsg" class="ng-hide"><div class="bg_block txt-waite radius5 pg-t-10 pg-b-10 pg-lr-40 dip ng-binding" ng-bind-html="isErrorMsg.errorMsg"></div></div></error-info></div>
+</div>
+<div id="fdd-load" class="fdd-loading ng-scope" style="width: 100%; min-width: 1200px; display: none;">
+    <div class="tipload"></div>
+</div>
+<div error-info="" is-error-msg="isErrorMsg" class="ng-scope ng-isolate-scope"><div class="section pos-f alpha5 z-index2 left-t-0 ng-hide" ng-show="isErrorMsg.isShowErrorMsg" style="background-color:rgba(255,255,255,0)"></div><div style="position:fixed; top:45%; left:0; right:0; text-align:center; z-index:99" ng-show="isErrorMsg.isShowErrorMsg" class="ng-hide"><div class="bg_block txt-waite radius5 pg-t-10 pg-b-10 pg-lr-40 dip ng-binding" ng-bind-html="isErrorMsg.errorMsg"></div></div></div>
+<!-- ngIf: locked -->
+<go-top class="ng-scope"><div class="fdd-ontop ng-hide" ng-show="isTopBtn"><a href="javascript:;"><img src="./resource/apptop.png"></a></div></go-top>
+<!--弹窗-->
+</div>
+    
+    <form id="csrfTokenForm" style="display:none;" action="./" method="post" class="ng-pristine ng-valid"><div>
+<input type="hidden" name="CSRFToken" value="409d6b6e836a4f42a400901d26dc34f1">
+</div></form>
+    
+    <div style="height:120px;"></div>
+
+<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row row-bottom-padded-md">
+						<div class="col-md-4">
+							<p>联系我们</p>
+							<h3 class="section-title">电话：400-869-2012</h3>
+							<h3 class="section-title">邮箱：xxxx@company.com</h3>
+						</div>
+						<div class="col-md-4">
+							<p>产品特色</p>
+							<ul class="feather">
+								<li>安全保障&nbsp;&nbsp;&nbsp;  过程保障</li>
+								<li>合规有效&nbsp;&nbsp;&nbsp;  文件加密</li>
+								<li>身份认证&nbsp;&nbsp;&nbsp;  防止篡改</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<p>下载客户端</p>
+							<img src="./images/fuwuhao.jpg">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 center">
+							<p>
+           © 2014-2017 深圳法大大网络科技有限公司版权所有. 保留一切权利. 增值电信业务经营许可证：粤B2-20170163 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+</body></html>
