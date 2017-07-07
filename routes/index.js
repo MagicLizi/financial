@@ -6,15 +6,8 @@ var aliApp = new Dayu("24530331", '809f67d3e0eb681d81f55c3fcb6130da');
 var dataAccess = require('dataAccess');
 var command = dataAccess.command;
 var executor = dataAccess.executor;
-var ccap = require('ccap')({
-    width:140,
-    height:32,
-    offset:20,
-    quality:100,
-    fontsize:28
-});
 var fs = require('fs');
-
+var request = require('request');
 //验证码长度
 var verifyCodeLength = 6;
 var verifyCoolDown = 60;
@@ -172,12 +165,17 @@ router.get('/smsCode',function(req,res){
 })
 
 router.get('/genPicCode',function(req,res){
-    let ary = ccap.get();
-    let txt = ary[0];
-    let buf = ary[1];
-    let base64Image = new Buffer(buf, 'binary').toString('base64');
-    req.session.picCode = txt;
-    res.send(base64Image);
+    // let ary = ccap.get();
+    // let txt = ary[0];
+    // let buf = ary[1];
+
+    let url = `http://ccapservice.magiclizi.com/ccapInfo`;
+    request(url, function (error, response, body) {
+        let json = JSON.parse(body);
+        let base64Image = json['base64Image'];
+        req.session.picCode = json['txt'];
+        res.send(base64Image);
+    });
 })
 
 module.exports = router;
